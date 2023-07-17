@@ -119,15 +119,18 @@ See https://peps.python.org/pep-0008/
     x *= C
     set_a &= set_b
 
-### Represent arbitrarily high or low values without explicit numbers
+### Represent arbitrarily high or low values
 
     float('inf')
     float('-inf')
-    import math
-    math.inf # positive infinite integer
-    -math.inf # negative infinite integer
     Decimal('Infinity')
     Decimal('-Infinity')
+
+    import math
+    math.inf
+    -math.inf
+
+    import numpy as np
     np_positive_infinity = np.inf
     np_negative_infinity = -np.inf
     math.isinf(np_positive_infinity)
