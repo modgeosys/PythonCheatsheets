@@ -28,7 +28,7 @@
     list_comp = [x*x for x in range(10)}
     dict_comp = {i: i * i for i in range(10)}
     set_comp  = {i%3 for i in range(10)}
-    gen_comp  = (2*x+5 for x in range(10))
+    generator_exp  = (2*x+5 for x in range(10))
 
 ### Use `isinstance()` rather than `type(p)` most of the time
 
