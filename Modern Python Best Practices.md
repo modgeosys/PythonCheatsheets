@@ -124,7 +124,7 @@ See https://peps.python.org/pep-0008/
     arr = np.arange(256 * 256 * 256)
     m = np.max(arr)  # not max(arr)!
 
-### Use pathlib for file paths
+### Use `pathlib` for file paths
 
     from pathlib import Path
     path = Path('path/to/file.json')
@@ -142,7 +142,7 @@ See https://peps.python.org/pep-0008/
     def do_io_taking_iod(iod: typing.IO):
         iod.write('something')
 
-### Repeatedly concatenate strings using StringIO rather than `+=`
+### Repeatedly concatenate strings using `StringIO` rather than `+=`
 
     from io import StringIO
     ss = StringIO()
